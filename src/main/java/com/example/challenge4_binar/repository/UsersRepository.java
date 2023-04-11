@@ -2,7 +2,9 @@ package com.example.challenge4_binar.repository;
 
 import com.example.challenge4_binar.model.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UsersRepository extends JpaRepository<Users, Integer> {
+@Repository
+public interface UsersRepository extends JpaRepository<Users, String> {
     Users findByUsername(String username);
 }

@@ -42,15 +42,4 @@ public class FilmsService {
         }
         return usersList;
     }
-
-//    public List<Films> deletedNotPermanent(int film_code) {
-//        List<Films> tampungFilm = new ArrayList<>();
-//        Optional<Films> films = fsR.findByIdAAndDeletedFalse(film_code);
-//        if(films.isPresent()){
-//            Films films1 = films.get();
-//            films1.setDeleted(true);
-//            tampungFilm.add(fsR.save(films1));
-//        }
-//        return tampungFilm;
-//    }
 }

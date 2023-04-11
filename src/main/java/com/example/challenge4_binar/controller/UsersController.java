@@ -27,9 +27,8 @@ public class UsersController {
     }
 
     @PutMapping(value = "/users-update/{username}")
-    public ResponseEntity<List<Users>> updateAll(@PathVariable String username, @RequestBody List<Users> userUpdate) {
-        users.updateAll(username, userUpdate);
-        return ResponseEntity.ok().build();
+    public List<Users> updateAll(@PathVariable String username, @RequestBody List<Users> userUpdate) {
+        return users.updateAll(username, userUpdate);
     }
 }
 

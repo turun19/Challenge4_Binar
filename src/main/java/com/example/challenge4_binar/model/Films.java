@@ -9,23 +9,17 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
+@Setter
+@Getter
 @Entity
 @Table(name = "films")
 @Data
 public class Films {
     @Id
-    @Setter
-    @Getter
-    private int film_code;
-    @Setter
-    @Getter
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer film_code;
     private String film_name;
-    @Setter
-    @Getter
     private String sedang_tayang_atau_tidak;
-
-    @Column(name = "is_deleted")
-    private Boolean deleted;
 
     @OneToMany(mappedBy = "film", cascade = CascadeType.ALL)
     @JsonManagedReference

@@ -29,7 +29,6 @@ public class UsersService {
         for (Users userFromRequest : userUpdate) {
             Users userFromDatabase = usersR.findByUsername(username);
             if (userFromDatabase != null) {
-                userFromDatabase.setUsername(userFromRequest.getUsername());
                 userFromDatabase.setEmail_address(userFromRequest.getEmail_address());
                 userFromDatabase.setPassword(userFromRequest.getPassword());
                 usersList.add(usersR.save(userFromDatabase));
