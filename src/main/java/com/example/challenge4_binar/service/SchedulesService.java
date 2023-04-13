@@ -30,7 +30,6 @@ public class SchedulesService {
         return fsr.findById(film_code).get().getSchedules();
     }
 
-    @Transactional
     public List<Schedules> addScheduleByFilmCode(int film_code, List<Schedules> schedules) {
         Optional<Films> films = fsr.findById(film_code);
 

@@ -16,7 +16,6 @@ import java.util.List;
 @Data
 public class Films {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer film_code;
     private String film_name;
     private String sedang_tayang_atau_tidak;

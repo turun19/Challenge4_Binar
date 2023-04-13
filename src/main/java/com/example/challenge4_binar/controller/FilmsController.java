@@ -18,6 +18,18 @@ public class FilmsController {
         return fs.getAllFilms();
     }
 
+    @GetMapping(value = "/status/{sedang_tayang_atau_tidak}")
+    public List<Films> getFilmTayangAtauTidak(@PathVariable("sedang_tayang_atau_tidak") String status){
+        return fs.findBySedangTayangAtauTidak(status);
+    }
+
+    @GetMapping(value = "/page") ///films/page?nama=Avatar&page=0&size=10
+    public List<Films> getFilmByName(@RequestParam("namaFilm") String namaFilm,  @RequestParam("page") int pageNumber,
+                                     @RequestParam("size") int pageSize){
+        return fs.findByFilmName(namaFilm, pageNumber, pageSize);
+    }
+
+
     @PostMapping(value = "/film-add")
     public List<Films> addAllFilms(@RequestBody List<Films> films){
         return fs.getAddFilms(films);

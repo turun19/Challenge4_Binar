@@ -40,30 +40,7 @@ public class UsersService {
     }
 
 
-//    public List<Users> updateAll(List<Users> userUpdate) {
-//        List<Users> usersList = new ArrayList<>();
-//        for (Users userFromRequest : userUpdate) {
-//            Users userFromDatabase = usersR.findByUsername(userFromRequest.getUsername());
-//            if (userFromDatabase != null) {
-//                userFromDatabase.setUsername(userFromRequest.getUsername());
-//                userFromDatabase.setEmail_address(userFromRequest.getEmail_address());
-//                userFromDatabase.setPassword(userFromRequest.getPassword());
-//                usersList.add(usersR.save(userFromDatabase));
-//            }else{
-//                throw new NullPointerException("Nilai kosong");
-//            }
-//        }
-//        return usersList;
-//    }
 
 
 
-
-//    public Users updateAll(@PathVariable String username, Users userUpdate) {
-//        Users users =usersR.findByUsername(username);
-//        users.setUsername(userUpdate.getUsername());
-//        users.setPassword(userUpdate.getPassword());
-//        users.setEmail_address(userUpdate.getEmail_address());
-//        return usersR.save(userUpdate);
-//    }
 }
