@@ -2,14 +2,12 @@ package com.example.challenge4_binar.service;
 
 import com.example.challenge4_binar.model.Users;
 import com.example.challenge4_binar.repository.UsersRepository;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UsersService {
@@ -39,8 +37,13 @@ public class UsersService {
         return usersList;
     }
 
+    public Users findByUsername(String username){
+        return usersR.findByUsername(username);
+    }
 
-
-
+    @Transactional
+    public void deleteByUsername(String username){
+        usersR.deleteByUsername(username);
+    }
 
 }

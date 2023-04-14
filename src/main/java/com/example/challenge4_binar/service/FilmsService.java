@@ -53,4 +53,10 @@ public class FilmsService {
         Pageable pageable = PageRequest.of(pageNumber, pageSize);
         return fsR.findAllByFilmName(namaFilm, pageable);
     }
+
+    public Films deleteFilmByFilmCode(int film_code) {
+        Films films = fsR.findById(film_code).get();
+        fsR.deleteById(film_code);
+        return films;
+    }
 }
