@@ -1,0 +1,9 @@
+2023-04-14T13:07:35.608+07:00  INFO 7088 --- [http-nio-8080-exec-2] c.e.c.controller.SchedulesController     : Sukses mengupdate schedule berdasarkan film code
+2023-04-14T13:07:54.329+07:00  INFO 7088 --- [http-nio-8080-exec-1] c.e.c.controller.FilmsController         : Sukses menampilkan semua film
+2023-04-14T15:07:34.066+07:00  INFO 7088 --- [http-nio-8080-exec-4] c.e.c.controller.UsersController         : Sukses Mendapatkan Data User
+2023-04-14T15:08:52.478+07:00  INFO 7088 --- [http-nio-8080-exec-8] c.e.c.controller.UsersController         : Sukses menambahkan Data User
+2023-04-14T15:09:17.538+07:00  INFO 7088 --- [http-nio-8080-exec-9] c.e.c.controller.UsersController         : Sukses menambahkan Data User
+2023-04-14T15:09:21.125+07:00  INFO 7088 --- [http-nio-8080-exec-10] c.e.c.controller.UsersController         : Sukses Mendapatkan Data User
+2023-04-14T15:10:10.238+07:00  INFO 7088 --- [http-nio-8080-exec-2] c.e.c.controller.UsersController         : Sukses mengupdate Data User
+2023-04-14T15:10:52.718+07:00  INFO 7088 --- [http-nio-8080-exec-1] c.e.c.controller.FilmsController         : Sukses menampilkan film yang sedang tayang atau tidak tayang
+2023-04-14T15:12:01.339+07:00  INFO 7088 --- [http-nio-8080-exec-7] c.e.c.controller.SchedulesController     : Sukses menampilkan jadwal berdasarkan film code

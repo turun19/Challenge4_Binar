@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: com.example.challenge4_binar.Challenge4BinarApplication
+
